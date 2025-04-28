@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Yatra+One:regular);
+*{
+    padding: 0;
+    margin: auto 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bdd2c5;
+    font-family: 'Poppins';
+}
+
+/* start of nav styling */
+nav{
+    background-color: #377d89;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+nav>h1{
+    font-family: 'Yatra One';
+}
+
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+li:hover{
+    cursor: pointer;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+}
+/* end of nav styling */
+
+/* styling container headers */
+
+h3{
+    color: #005a9d;
+    text-align: center;
+}
+
+/* styling main container to achieve a flex display */
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+/* styling containers */
+.container{
+    width: 20%;
+    height: auto;
+    border: 2px solid #377d89;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* container hover effect */
+.container:hover{
+    scale: 1.05;
+    box-shadow: 0px 0px 10px 2px #386c5f ;
+}
+
+/* styling the image */
+img{
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    height: 250px;
+}
+
+/* media queries for small screens */
+@media(max-width: 480px){
+    .main-container{
+        display: block;
+    }
+    .container{
+        width: 80%;
+        border: none;
+
+    }
+}
